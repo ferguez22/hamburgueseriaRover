@@ -92,7 +92,7 @@ img {
 
 .secondSection {
     height: 43rem;
-    background-image: url(/images/fondo.jpg);
+    background-image: url('https://i.ibb.co/gZCQyz1/fondo.jpg');
     background-size: cover;
     background-position: center center;
     background-blend-mode: multiply;
