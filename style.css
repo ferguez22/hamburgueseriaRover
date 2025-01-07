@@ -1,0 +1,426 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1em;
+}
+
+.container {
+    max-width: 75rem;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos de la Caja Superior  que es el header*/
+.cajaSuperior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(226, 16%, 15%);
+    height: 4rem;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+
+        li a {
+            display: inline-block;
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        li i {
+            color: #fa573a;
+        }
+    }
+}
+
+/* Estilos de la navegacion1 dentro de section*/
+
+.navegacion1 {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    figure {
+        width: 12.5rem;
+
+        img {
+            width: 120px;
+        }
+    }
+
+
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        li a {
+            color: rgb(255, 255, 255);
+            margin-right: 10px;
+            padding: 10px 10px 0px 0px;
+            text-decoration: none;
+            color: gray;
+
+            span {
+                color: #fa573a;
+            }
+        }
+    }
+}
+
+/* Estilos del fondo principal */
+
+.secondSection {
+    height: 43rem;
+    background-image: url(/images/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #666;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 3.125rem;
+    padding-top: 180px;
+    padding-left: 50px;
+
+    div {
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+
+            color: #fa573a;
+        }
+
+        h3 {
+
+            color: white;
+        }
+
+        button {
+            background-color: #fa573a;
+            margin-top: 0.625rem;
+            padding: 0.625rem;
+            font-size: 1.375rem;
+            border-radius: 0.4375rem;
+            border: 3px solid #fa573a;
+            color: white;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #fa573a1f;
+                color: #ff8c78;
+                transform: scale(1.0);
+            }
+        }
+
+        .sociales {
+            padding-top: 15px;
+            font-size: 2.5rem;
+        }
+    }
+
+
+}
+
+/* Estilos de servicios */
+
+.servicios {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 6.25rem;
+
+    h2 {
+        font-size: 3em;
+        text-align: center;
+
+        span {
+            color: #fa573a;
+        }
+    }
+
+    a {
+        color: #fa573a;
+        text-decoration: none;
+    }
+
+    .grid {
+        margin-top: 20px;
+        display: grid;
+        height: 100%;
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+
+        article {
+            margin-left: 20px;
+            padding-left: 35px;
+            border-left: 1px solid black;
+
+
+            i {
+                color: #fa573a;
+                font-size: 2em;
+                border: 1px solid #fa573a;
+                padding: 13px;
+                margin-bottom: 15px;
+
+            }
+        }
+    }
+}
+
+/* Estilos de About Us */
+
+.aboutUs {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    h2 {
+        font-size: 3em;
+        text-align: center;
+
+        span {
+            color: #fa573a;
+        }
+    }
+
+    img {
+        position: relative;
+        ;
+    }
+
+    a {
+        color: #fa573a;
+        text-decoration: none;
+    }
+}
+
+.sec-grid {
+    margin-top: 1.25rem;
+    display: grid;
+    height: 100%;
+    padding: 0.625rem;
+    gap: 1.45rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    article {
+        margin-left: 1.25rem;
+        border-left: #fa573a;
+
+
+        i {
+            color: #fa573a;
+            font-size: 2em;
+            border: 0.0625rem solid #fa573a;
+            padding: 0.8125rem;
+            margin-bottom: 0.9375rem;
+
+        }
+    }
+}
+
+.cuadro {
+    border: 5px solid #fa573a;
+    transition: 0.5s;
+    transform: rotateZ(10deg);
+
+    &:hover {
+        transform: rotateZ(0);
+    }
+
+    img {
+        transform: rotateZ(-10deg);
+        transition: 0.5s;
+
+        &:hover {
+            transform: rotateZ(0)
+        }
+    }
+
+}
+
+.arriba {
+    background-color: #fa573a;
+    position: relative;
+    left: 80%;
+    margin-top: 0.625rem;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    padding: 0.625rem;
+    font-size: 1.375rem;
+    border-radius: 0.4375rem;
+    border: 3px solid #fa573a;
+    color: white;
+    /* Mejoramos la transición */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fa573a1f;
+        color: #ff8c78;
+        /* Añadimos efectos al hover */
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 5px 15px rgba(250, 87, 58, 0.3);
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Media queries */
+
+@media(max-width:46.875rem) {
+
+    .cajaSuperior {
+        ul {
+            justify-content: space-around;
+            width: 100%;
+
+            li a {
+                display: none;
+            }
+
+            li i {
+                font-size: 1.875rem;
+                padding: 0rem 0.625rem;
+            }
+        }
+    }
+
+    .secondSection {
+        height: 43rem;
+        background-image: url(/images/fondo.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-color: #666;
+        color: white;
+        font-size: 1rem;
+        line-height: 2rem;
+        padding-top: 11.25rem;
+        padding-left: 3.125rem;
+
+        div {
+
+            h1 {
+                color: white;
+            }
+
+            h2 {
+
+                color: #fa573a;
+            }
+
+            h3 {
+
+                color: white;
+            }
+
+            button {
+                background-color: #fa573a;
+                padding: 0.625rem;
+                font-size: 1rem;
+                border-radius: 0.4375rem;
+                border: 0.1875rem solid #fa573a;
+                color: white;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: #fa573a1f;
+                    color: #ff8c78;
+                    transform: scale(1.0);
+                }
+            }
+
+            .sociales {
+                font-size: 2.5rem;
+            }
+        }
+
+
+    }
+
+    .servicios {
+        margin-top: 3.125rem;
+        width: 100%;
+        height: auto;
+        margin-bottom: 6.25rem;
+
+        .grid {
+            margin-top: 20px;
+            display: grid;
+            height: 100%;
+            padding: 0.625rem;
+            gap: 0.625rem;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 auto;
+
+            article {
+                margin-bottom: 3.125rem;
+            }
+
+        }
+    }
+
+    .sec-grid {
+        margin-top: 1.25rem;
+        display: grid;
+        height: 100%;
+        padding: 0.625rem;
+        margin: 2.5rem;
+        gap: 0.625rem;
+        grid-template-columns: repeat(1, 1fr);
+
+        article {
+            margin-left: 1.25rem;
+            border-left: #fa573a;
+
+
+            i {
+                color: #fa573a;
+                font-size: 2em;
+                border: 0.0625rem solid #fa573a;
+                padding: 0.8125rem;
+                margin-bottom: 0.9375rem;
+
+            }
+        }
+
+    }
+}

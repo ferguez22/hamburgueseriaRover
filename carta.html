@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #000000, #434343);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+        #volver {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fa573a;
+            margin-top: 0.625rem;
+            padding: 0.625rem;
+            font-size: 1.375rem;
+            border-radius: 0.4375rem;
+            border: 3px solid #fa573a;
+            color: white;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        #volver:hover {
+            background-color: #fa573a1f;
+            color: #ff8c78;
+            transform: scale(1.0);
+        }
+    </style>
+</head>
+<body>
+    <button id="volver">
+        Volver al Inicio
+    </button>
+    <img src="/images/menu.jpg" alt="Menú">
+</body>
+<script>
+document.getElementById('volver').addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
+</script>
+</html>

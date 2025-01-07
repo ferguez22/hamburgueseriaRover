@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rovers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header class="cajaSuperior">
+        <ul class="container">
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:rover@gmail.com">rover@gmail.com</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:915555666">915 555 666</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#">Carrito Compra</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-user box usercolor"></i>
+                <a href="#">Usuario</a>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <nav class="navegacion1 container">
+            <figure>
+                <img src="/images/logo.jpg" alt="Logo">
+            </figure>
+            <ul>
+                <li><a href=""><span>Inicio</span></a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Equipo</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- ----------------------- -->
+
+    <section class="secondSection">
+        <div class="container">
+            <h1>Las mejores hamburguesas del mundo</h1>
+            <h2>Bienvenido a nuestra hamburguesería</h2>
+            <h3>Disfruta de nuestras hamburguesas a partir de 15€</h3>
+            <button id="carta">Nuestra Carta:</button>
+            <div class="sociales">
+                <a href="https://facebook.com" style="color: white;" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com" style="color: white;" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com" style="color: white;" target="_blank"><i class="fa-brands fa-instagram"></i></a>    
+            </div>
+        </div>
+    </section>º
+    <!-- ----------------------- -->
+
+    <section class="servicios">
+        <h2>Our <span>Services</span></h2>
+        <section class="grid container">
+            <article>
+                <i class="fa-solid fa-burger"></i>
+                <h3>1. Carne 100% natural</h3>
+                <p>Nuestras hamburguesas están hechas con carne 100% natural, seleccionada cuidadosamente para
+                    garantizar el mejor sabor y
+                    la máxima frescura en cada bocado.</p>
+                <a href="#" class="subir">Leer más ⮕</a>
+            </article>
+            <article>
+                <i class="fa-solid fa-utensils"></i>
+                <h3>2. Cocina moderna</h3>
+                <p>Fusionamos lo tradicional con lo moderno para ofrecerte una experiencia culinaria única. Nuestro
+                    equipo utiliza técnicas
+                    innovadoras para preparar hamburguesas que no solo son deliciosas, sino también un festín para los
+                    ojos.</p>
+                <a href="#" class="subir">Leer más ⮕</a>
+            </article>
+            <article>
+                <i class="fa-solid fa-heart"></i>
+                <h3>3. Servicio impecable</h3>
+                <p>Nos enorgullecemos de ofrecer un servicio al cliente excepcional. Desde el momento en que entras por
+                    la puerta hasta que
+                    te marchas, nuestro equipo se asegura de que disfrutes de una experiencia inolvidable.</p>
+                <a href="#" class="subir">Leer más ⮕</a>
+            </article>
+        </section>
+    </section>
+    <!-- ----------------------- -->
+
+    <section class="aboutUs">
+        <h2>About <span>Us</span></h2>
+        <section class="sec-grid container">
+            <div class="cuadro">
+                <figure class>
+                    <img src="/images/about-main.jpg" alt="">
+                </figure>
+            </div>
+            <article>
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Nuestra Historia</h3>
+                <p>El Restarante</p>
+                <p>Nuestra pasión por las hamburguesas comenzó hace más de una década. Desde entonces, hemos
+                    perfeccionado nuestras recetas
+                    para ofrecerte hamburguesas que combinan los mejores ingredientes con un toque de creatividad.
+                    Cada
+                    hamburguesa es una
+                    obra maestra, creada con amor y dedicación.</p>
+                <a href="#" class="subir">
+                    <div>Leer más ⮕</div>
+                </a>
+            </article>
+        </section>
+    </section>
+
+    <a href="#top" id="btn-arriba">
+        <button class="arriba container">⬆</button>
+    </a>
+
+    <footer>
+        <p>Copyright © 024 - Aviso Legal - Cookies</p>
+    </footer>
+
+</body>
+<script>
+
+document.getElementById('btn-arriba').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('carta').addEventListener('click', function() {
+    window.location.href = "carta.html";
+});
+
+
+</script>
+
+</html>
